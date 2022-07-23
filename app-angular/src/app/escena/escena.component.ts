@@ -6,8 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./escena.component.sass']
 })
 export class EscenaComponent implements OnInit {
-  @Input()frasesParaMostrar:frases;
-  @Input()indice:number;
+  @Input() data: any;
 
   constructor() { }
 
