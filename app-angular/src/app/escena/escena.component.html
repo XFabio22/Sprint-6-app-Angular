@@ -1,7 +1,9 @@
-<div class="container mt-2">
-    <div class="text-center">
-        <p class="border border-dark border-3 rounded-pill">{{data}}</p>
+<div class="container">
+    <div class="row">
+        <div class="botones">
+            <button  (click)="prev()" class="btn btn-outline-dark">Anterior</button>
+            <button (click)="next()" class="btn btn-outline-dark" >Siguiente</button>
+        </div>
+        <p *ngFor="let datos of data"; class="border border-dark border-3 rounded-pill">{{datos}}</p>
     </div>
-    
-
 </div>

@@ -6,8 +6,17 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./escena.component.sass']
 })
 export class EscenaComponent implements OnInit {
-  @Input() data: any;
+  @Input() data:string[];
 
+  currentSentence = 0;
+
+  public prev(){
+
+  }
+
+  public next(){
+
+  }
   constructor() { }
 
   ngOnInit(): void {
