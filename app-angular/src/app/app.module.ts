@@ -10,11 +10,12 @@ import { EscenaComponent } from './escena/escena.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    EscenaComponent
+    EscenaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

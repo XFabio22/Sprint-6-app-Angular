@@ -1,5 +1,6 @@
-import { historia } from 'assets/historia.json';
-import { Component, Input, OnInit } from '@angular/core';
+
+import { Component, Input,  } from '@angular/core';
+import { Historia } from '../interface/interface';
 
 
 @Component({
@@ -7,15 +8,36 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
+  
+  historia:Historia[] = [
+    { 
+        texto:"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
+        img:"" 
+    },
 
-  @Input() public historia:any = historia.json;
+    {
+        texto:"Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.",
+        img:"" 
+    },
+    
+    {
+        texto:"L'heroi va decidir travessar la porta que el portava a casa",
+        img:"" 
+    },
+    
+    {
+        texto:"Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ...",
+        img:""    
+    }
 
-  constructor() {
+  
+    
+  
+    
+]
 
-   }
 
-  ngOnInit(): void {
-  }
+
 
 }

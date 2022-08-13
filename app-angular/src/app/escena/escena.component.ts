@@ -1,25 +1,24 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Historia } from './../interface/interface';
+import { Component, Input,  } from '@angular/core';
 
 @Component({
   selector: 'app-escena',
   templateUrl: './escena.component.html',
-  styleUrls: ['./escena.component.sass']
+  styleUrls: ['./escena.component.css']
 })
-export class EscenaComponent implements OnInit {
-  @Input() data:string[];
+export class EscenaComponent  {
+  @Input() historia:Historia[]= [];
+
 
   currentSentence = 0;
+   prev(){
+    
 
-  public prev(){
+  }
+
+   next(){
 
   }
 
-  public next(){
-
-  }
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
