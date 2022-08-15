@@ -1,16 +1,24 @@
-<div class="container">
+<div  class=" container-fluid img-fondo" style="background-image:url({{historia[currentSentence].img}});
+    background-repeat: no-repeat;
+
+    background-size: cover;
+  
+
+">
 
 
-    <div class="row">
-        <div class="botones">
+    <div class="row  ">
+        <div class=" d-flex justify-content-between  botones">
             <button  (click)="prev()" class="btn btn-outline-dark">Anterior</button>
             <button (click)="next()" class="btn btn-outline-dark" >Siguiente</button>
         </div>
         <ul>
-            <li *ngFor="let datos of historia" class="border border-dark border-3 rounded-pill">
+            <p *ngFor="let datos of historia ; let i = index"  [ngStyle]="{backgroundColor: currentSentence == i ? 'rgb(240,128,128)' : 'rgba(255,255,255,0.6)'}" class="align-middle border border-dark border-3 rounded-pill">
             {{datos.texto}}
-            </li>
+        
+            </p>
         </ul>
+  
       
     </div>
 </div>

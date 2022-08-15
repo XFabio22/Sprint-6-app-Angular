@@ -1,2 +1,10 @@
 
-<app-escena [historia]="historia"></app-escena>
+
+<div class="d-flex justify-content-center" *ngIf="!mostrar" >
+    <button (click)="comenzar()" >COMENZAR</button>
+</div>
+<div  *ngIf="mostrar">
+    <app-escena [historia]="historia"></app-escena>
+</div>
+
+
